@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot de Pedidos</title>
+    <!-- Si vas a usar CSS, asegúrate de que la ruta sea correcta -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2>Chat de Pedidos "La Pizza Feliz"</h2>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <!-- Los mensajes del chat se insertarán aquí dinámicamente -->
+            </div>
+            <div class="chat-input-form">
+                <input type="text" id="message-input" placeholder="Escribe tu mensaje...">
+                <button id="send-button">Enviar</button>
+            </div>
+        </div>
+
+        <div class="order-summary-container">
+            <div class="order-summary-header">
+                <h2>Resumen del Pedido</h2>
+            </div>
+            <div class="order-summary-body" id="order-items">
+                <p class="empty-cart-message">Tu carrito está vacío</p>
+            </div>
+            <div class="order-summary-footer" id="order-total">
+                <!-- El precio total se insertará aquí -->
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
